@@ -10,6 +10,15 @@ def play_video(url):
 
 
 if __name__ == '__main__':
+    window = Tk()
+    window.withdraw()
+    cat = simpledialog.askinteger(title='I know that you have cats', prompt='how many cats do you have?')
+    if cat >= 3:
+        messagebox.showinfo(message='you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady you are a crazy cat lady')
+    elif cat > 0 and cat < 3:
+        play_video('https://www.youtube.com/watch?v=7_cPF8oDoJM')
+    elif cat == 0:
+        play_video('https://www.youtube.com/watch?v=oj_yLBltPE8')
     # TODO 1) Make a new window variable, window = Tk()
     #      2) Hide the window using the window's .withdraw() method
     #      3) Ask the user how many cats they have
